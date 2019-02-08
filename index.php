@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bootstrap</title>
+  <title>Curriculum Vitae</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,13 +39,15 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#cv.html">My Personal Details</a>
+            <a class="nav-link js-scroll-trigger" href="#cv.html">Personal Details</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">My Intrests</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Strategic Consulting Services</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Work Experience</a>
+            
+            
           </li>
         </ul>
       </div>
