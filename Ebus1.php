@@ -1,7 +1,7 @@
 <?php
 session_start();
 $totalValue="";
-$_Session['txtTotal']= $totalValue;
+$_SESSION['txtTotal']= $totalValue;
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http.//www.w3.org/1999/xhtml">
@@ -49,7 +49,7 @@ $_Session['txtTotal']= $totalValue;
                         </tr>
                         <tr>
                             <td><b>Immersive Experience</b></td>
-                            <td><input type="radio" id="immersiveexperience" name="rdoGroup" value="3500"/></td>
+                            <td><input type="radio" id="immersiveexperience" name="rdoGroup" value="3000"/></td>
                         </tr>
                         
                         </table>
@@ -99,22 +99,22 @@ $_Session['txtTotal']= $totalValue;
            if (document.getElementById('blockchain').checked){
                document.intCalc.txtSubTot.value = blockchain;
                subAmount= blockchain;
-               calculation(subAmount);
+               calcDispVatTotalDisc(subAmount);
            }
            else if (document.getElementById('autonomousthings').checked){
                document.intCalc.txtSubTot.value = autonomousthings;
                subAmount= autonomousthings;
-               calculation(subAmount);
+               calcDispVatTotalDisc(subAmount);
            }
             else if (document.getElementById('immersiveexperience').checked){
                document.intCalc.txtSubTot.value = immersiveexperience;
                subAmount= immersiveexperience;
-               calculation(subAmount);
+               calcDispVatTotalDisc(subAmount);
            }
        }
         //Function for calculating values 
-        function calculation(parmSTotal){
-            var subTotal = parseFloat(parmSTotal);
+        function calcDispVatTotalDisc(parmSubTotal){
+            var subTotal = parseFloat(parmSubTotal);
             var discCalc = parseFloat(subTotal*.10);
             var vatCalc = parseFloat(subTotal*.20);
             var total = parseFloat(subTotal - discCalc + vatCalc);

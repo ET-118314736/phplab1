@@ -1,14 +1,14 @@
 <?php
 session_start();
 $fullNameValue ="";
-$totalValue = "";
+$totalValue2 = "";
 /*
  * Create a session variable for the mobile number 
  */
 
-$totalValue = $_post ['txtTotal'];
+$totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
-$_SESSION['txtTotal'] = $totalValue;
+$_SESSION['txtTotal'] = $totalValue2;
 /*
  * Allocate the mobile number session variable to a text box
  */
@@ -33,32 +33,44 @@ $_SESSION['txtTotal'] = $totalValue;
             </head>
             
             <body>
+                <center>
+                <h1> ETJT Consulting Services</h1>
                 <div class="form">
                     <form name="Details" method="post" action="Ebus3.php">
-                        <center>
+                        
                             <table cellspacing="10">
                                 <tr>
                                     <td><b></b></td>
-                                    <td><b>Enter your details  below</b></td>
+                                    <td><b>Please enter your  payment details  below</b></td>
                                 </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td><input type="text" id="txtName" name="txtName" value="" required/></td>
+                                </tr>
+                                
                                 <tr>
                                     <td>Phone number</td>
-                                    <td><input type="text" id="txtName" name="txtName" value=""/></td>
+                                    <td><input type="number" name="phone_num" id="phone_num" max="9999999999"/></td>
                                 </tr>
                                 <tr>
-                                    <td>Password</td>
-                                    <td><input type="text" id="txtPassword" name="txtPassword" value=""/></td>
+                                    <td>PIN</td>
+                                    
+                                    <td><input type="password" id="txtPIN" name="txtPIN" maxlength="4" required/></td>
                                 </tr>
                                 <tr>
-                                    <td><input type ="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>"/>
+                                    <td><input type ="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue; ?>"/>
                                 </tr>
                             </table>
                         </center>
                         <center>
                       <input type="submit" name="btncontinue" id="btnContinue" onclick="" value="Continue"/>
                             </center>
-                </div>
                     </form>
+                </div>
+                <br></br>
+                <center>
+            <img src="code.jpg"width="400" height="250" ><img src="code3.jpg" width="400" height="250" ><img src="code2.jpg"  width="400" height="250" >
+                </center>
             </body>
     </html>
 
