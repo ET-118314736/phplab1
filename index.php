@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,6 +45,7 @@ body{
       <li> <a href="http://localhost:8000/cv.html">Curriculum Vitae</a></li>
       <li> <a href="http://localhost:8000/intrests.html">Interests</a></li>
       <li><a href="http://localhost:8000/SCS.html">Strategic Consulting Services</a></li>
+      <li><a href="http://localhost:8000/homepage.html">Project Links</li>
 
 </div>
 </center>
