@@ -42,10 +42,10 @@ body{
 <div class="vertical-menu">
     <ol>
     
-      <li> <a href="http://localhost:8000/cv.html">Curriculum Vitae</a></li>
-      <li> <a href="http://localhost:8000/intrests.html">Interests</a></li>
-      <li><a href="http://localhost:8000/SCS.html">Strategic Consulting Services</a></li>
-      <li><a href="http://localhost:8000/homepage.html">Project Links</li>
+      <li> <a href="cv.html">Curriculum Vitae</a></li>
+      <li> <a href="intrests.html">Interests</a></li>
+      <li><a href="SCS.html">Strategic Consulting Services</a></li>
+      <li><a href="homepage.html">Project Links</li>
 
 </div>
 </center>
